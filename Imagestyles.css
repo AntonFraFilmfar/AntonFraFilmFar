@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* Landing image */
+.landingimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .landingimage figure {
+        position: relative;
+        display: flex;
+    }
+
+    .landingimage img{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .landingimage figcaption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+
+    }
+
+/* Centered image, used in about me section */
+.centeredimage{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+    .centeredimage img{
+        width: 100%;
+        height: auto;
+        padding-left: 30px;
+        padding-right:30px;
+        max-width: 500px ;
+        align-self: center;
+    }
+
+/* Logo's for footer */
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+    .logos img{
+        max-width: 50px;
+        height: auto;
+    }
+
+/* Product highlight section */
+.product{
+    background-color: var(--lilla);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}   
+
+    .product img{
+    max-width: 20%;
+    height: auto;
+    }
+
+    .product figure {
+        position: relative;
+        display: flex;
+    }
+
+    .product figcaption{
+        position: absolute;
+        bottom: 0%; 
+        left: 0%;
+        width: 90%;
+        text-align: center;
+        color: var(--white);
+        
+
+    }

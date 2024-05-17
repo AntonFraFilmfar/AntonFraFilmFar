@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import url(constants.css); @import url(Imagestyles.css);
+
+/* General website Style rules */
+body {
+    font-family: "Poppins, Mukta Vaani, Roboto, sans-serif";
+    background-color: var(--black);
+    
+}
+
+/* Extra classes, for niche elements */
+.centered {
+        text-align: center;
+}
