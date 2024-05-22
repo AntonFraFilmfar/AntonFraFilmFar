@@ -12,4 +12,64 @@ body {
 /* Extra classes, for niche elements */
 .centered {
         text-align: center;
+
 }
+
+/* top nav menu */
+.topnav {
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+}
+    .topnav a{
+    display: flex;
+    align-items: baseline;
+    Justify-content: space-around;
+    text-decoration: none;
+    padding: 20px;    
+
+    }
+
+    .topnav a:hover{
+        background-color: var(--lilla);
+        color: var(--black);
+
+    }
+    
+    .topnav a.active{
+        background-color: var(--white);
+        color: var(--black);
+        border-radius: 4px;
+    }
+
+    .topnav img{
+        max-height: 50px;
+    }
+
+    .topnav .icon {
+        display: none;
+        align-self: center;
+        width: 50px;
+        Height: 50px;
+    }
+
+        /* Topnav media queries */
+        /* on screens smaller than 600px, show only logo and burgermenu icon */
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display:none;}
+            .topnav a.icon{
+                display: flex;
+                align-self: flex-end;
+
+            }
+        }
+        /* Display menu vertical */
+        @media screen and (max-width: 600px){
+            .topnav.responsive {position: relative;}
+            .topnav.responsive a.icon {
+                position: absolute;
+                right:0;
+                top:0;
+            }
+            
+        }

@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Mukta+Vaani">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -20,6 +21,31 @@
             <figcaption class="title">Anton fra FilmFar</figcaption>
         </figure>
 
+    </div>
+
+    <!-- Nav menu -->
+    <div class="topnav">
+        <a href="#home" class="active"><img src="images/filmfar_textlogo.png" alt="Filmfar logo"></a>
+        
+        <!-- subpage nav links -->
+        <a href="#film" class="title"> Film </a>
+        <a href="#design" class="title"> Design </a>
+        <a href="#Øvrige" class="title"> Øvrige evner </a>
+        <!-- find et andet navn til "andet" -->
+        <!-- Javascript, burgermenu -->
+        <a href="javascript:void(0);" class="icon" onclick="Burgermenu()">
+            <i class="fa fa-bars"></i>
+
+            <script>
+                function myFunction() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+                } 
+            </script>
     </div>
 
     <!-- About me section -->
