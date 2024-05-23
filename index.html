@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>Anton fra FilmFar</title>
     <meta charset="utf-8">
-    
+    <title>Anton fra FilmFar</title>
+
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Mukta+Vaani">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -24,28 +23,24 @@
     </div>
 
     <!-- Nav menu -->
-    <div class="topnav">
-        <a href="#home" class="active"><img src="images/filmfar_textlogo.png" alt="Filmfar logo"></a>
-        
-        <!-- subpage nav links -->
-        <a href="#film" class="title"> Film </a>
-        <a href="#design" class="title"> Design </a>
-        <a href="#Øvrige" class="title"> Øvrige evner </a>
-        <!-- find et andet navn til "andet" -->
-        <!-- Javascript, burgermenu -->
-        <a href="javascript:void(0);" class="icon" onclick="Burgermenu()">
-            <i class="fa fa-bars"></i>
+    <div class="top-menu">
+            <a href="#home" class=" "> <img src="images/filmfar_textlogo.png" alt="Anton fra Filmfar logo, fører til forsiden"> </a>
+            
+            <div id="menuToggle" class="p1">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            
 
-            <script>
-                function myFunction() {
-             var x = document.getElementById("myTopnav");
-             if (x.className === "topnav") {
-                x.className += " responsive";
-                } else {
-                x.className = "topnav";
-                }
-                } 
-            </script>
+            <ul id="nav-menu">
+                <li><a href="#home">Hjem</a></li>
+                <li><a href="#film">Film</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#øvrige">Øvrige evner</a></li>
+                <li><a href="https://filmfar.dk/"> Filmfar.DK </a></li>
+            </ul>
+            </div>
     </div>
 
     <!-- About me section -->
@@ -53,12 +48,12 @@
     <div class="p1 centered">anton@filmfar.dk</div>
     <div class="p1 centered">+45 22 47 41 08</div>
     <div class="centeredimage"><img src="images/Anton smiler.png" alt="Anton Juhl smiler"></div>
-    <div class="p1">
+    <p class="p1">
         Filmskaber og Designer som har haft fornøjelsen af at være med til at skabe prisvindende film, iøjenfaldende designs og nye processer samt metoder. 
         <br>
         <br>
         Ofte som leder af talentfulde hold, til spændende klienter.
-    </div>
+    </p>
    
         <br>
 
@@ -85,7 +80,7 @@
         <br>
         <br>
     <!-- Link to email -->
-    <div class="p2">Tøv ikke med at <a href="mailto: anton@filmfar.dk">kontakte mig</a></div>
+    <div class="p2">Tøv ikke med at <a href="mailto:anton@filmfar.dk">kontakte mig</a></div>
         
         <br>
 
@@ -104,30 +99,32 @@
         <br>
 
     <!-- Footer -->
-    <div class="p1">
-        Tak fordi du kiggede forbi. Hvis du har et spændende projekt, eller hvis du leder efter et nyt medlem til dit hold, 
-        <a href="mailto: anton@filmfar.dk">så ser jeg frem til at høre fra dig</a>
+    <div class="footer">
+        <p class="footerparagraf p1">
+            Tak fordi du kiggede forbi. Hvis du har et spændende projekt, eller hvis du leder efter et nyt medlem til dit hold, 
+            <a href="mailto:anton@filmfar.dk">så ser jeg frem til at høre fra dig</a>
+        </p>
+
+            <br>
+
+        <p class="footerparagraf p2">
+
+            Du kan også fortsætte med at dykke ned i hvem jeg er herunder:
+
+        </p>
+
+            <br>
+            <br>
+            <br>
+        <div class="logos">
+            <a href="https://www.instagram.com/ass_mussen/"><img src="images/instagram logo.png" alt=""> </a>
+            <a href="https://www.18frames.dk/anton-juhl"><img src="images/18-FRAMES logo.png" alt=""> </a>
+            <a href="https://www.imdb.com/name/nm14036279/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_anton%2520juhl"> <img src="images/imdb logo.png"> </a>
+        </div>
     </div>
 
-        <br>
-
-    <div class="p2">
-
-        Du kan også fortsætte med at dykke ned i hvem jeg er herunder:
-
-    </div>
-
-        <br>
-        <br>
-        <br>
-    <div class="logos">
-        <a href="https://www.instagram.com/ass_mussen/"><img src="images/instagram logo.png"> </a>
-        <a href="https://www.18frames.dk/anton-juhl"><img src="images/18-FRAMES logo.png"> </a>
-        <a href="https://www.imdb.com/name/nm14036279/?ref_=nv_sr_srsg_0_tt_0_nm_8_q_anton%2520juhl"> <img src="images/imdb logo.png"> </a>
-    </div>
-
-        <br>
-
+     <br>
+        
 </body>
 
 </html>

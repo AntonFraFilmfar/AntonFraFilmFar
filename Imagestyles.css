@@ -51,13 +51,18 @@
 }
 
     .logos img{
-        max-width: 50px;
+        max-width: 45%;
         height: auto;
+        flex-wrap: nowrap;
+        flex-flow: row;
+        justify-items: center;
+        align-items: center;
     }
+
 
 /* Product highlight section */
 .product{
-    background-color: var(--lilla);
+    background-color: var(--purple);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -81,6 +86,5 @@
         width: 90%;
         text-align: center;
         color: var(--white);
-        
 
     }

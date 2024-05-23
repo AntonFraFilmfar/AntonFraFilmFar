@@ -6,12 +6,13 @@
     /* Colours used */
     --white:#f5f5f5;
     --black:#020202;
-    --lilla:#4B367A;
+    --purple:#4B367A;
     --pink:#E1ABFF;
 
     
 }
 /* The 3 typographys used */
+  
 
 /* Title */
 .title {
@@ -31,7 +32,7 @@
 
 /* Paragraph text */
 .p2 {
-    font-size: 20;
+    font-size: 20px;
     font-family: 'Mukta Vaani',monospace;
     font-weight: normal;
     color: var(--white);
@@ -39,7 +40,7 @@
 
 /* Placeholder text */
 .placeholder {
-    font-size: 15;
+    font-size: 15px;
     font-family: monospace;
     font-weight: normal;
     color: var(--white);
@@ -50,11 +51,12 @@
 a{
     display: inline-block;
     padding: 5px 5px;
-    color: #f5f5f5;       
+    color: #f5f5f5;
+           
 }
 
     a:hover{
-        background-color: var(--lilla);
+        background-color: var(--purple);
         color: var(--pink);
         transition:  0.3s ease, padding 0.3s ease;
         border-radius: 2px;
