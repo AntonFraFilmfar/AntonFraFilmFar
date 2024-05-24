@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url(constants.css); @import url(Imagestyles.css);
+@import url(constants.css); @import url(Frontpageonly.css);
 
 /* General website Style rules */
 body {
@@ -15,27 +15,43 @@ body {
 
 }
 
+.purple {
+    background-color: var(--purple);
+}
+
 /*nav menu */
-.top-menu{
+.navbar{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%; 
+    z-index: 1;
+    background-color: var(--black);
+}
 
+.sticky {
+position: fixed;
+top:0px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
 }
 
 #menuToggle {
     position: relative;
+    top:15px;
+    left: -20px;
     z-index: 1;
     
 }
 
-.top-menu img{
+.navbar img{
     max-height: 45px;
-    max-width: auto;
+    width: auto;
 
 }
 
-#nav-menu {
+#navmenu {
     position: absolute;
     right: -1000px;
     top: 80px;
@@ -47,13 +63,12 @@ body {
     opacity: 100%;
     list-style-type: none;
 
-    transition: left 0.5s;
+    transition: 0.55s ease;
 }
 
-#nav-menu li {
+#navmenu li {
     padding: 10px 0;
-}
-
+}   
 
 /* Checkbox system, checking when the user clicks the burgermenu */
 #menuToggle input {
@@ -69,6 +84,7 @@ z-index: 2;
 /* burgermenu 'logo'*/
 #menuToggle span{
     display: block;
+    display: flex;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
@@ -76,8 +92,7 @@ z-index: 2;
     background: var(--white);
     border-radius: 1px;
     z-index: 1;
-    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55 ease;
+    transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     transform-origin: 4px 0px;
     
 }
@@ -106,7 +121,8 @@ background: var(--white)
 }
 
 #menuToggle input:checked ~ ul {
-    right: 40px;
+    right: 0px;
+    transition: 0.55s ease;
 }
 
 /* Footer */
@@ -114,4 +130,92 @@ background: var(--white)
     display: flex;
     flex-direction: column;
     
+}
+
+/* Title på undersider */
+.firsttitle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    width: auto;
+}
+
+.firsttitle p1{
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-bottom: 70px;
+}
+
+/* Showcase img right */
+.showcase{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex-wrap: wrap;
+padding:10px;
+}
+
+.showcase figure{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase a{
+   width: 100%;
+   text-align: center;
+}
+
+.showcase img{
+    width: 90%;
+    
+}
+
+.showcase figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--white);
+}
+
+
+/* Typography, for showcase - with edited margin*/
+.showcasetitle {
+    font-size: 46px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    color:var(--white);
+
+        display: block;
+        margin-block-start: 20px;
+        margin-block-end: 10px;
+    
+}
+
+/* Subtitle */
+.showcasep1 {
+    font-size: 32px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: lighter;
+    color:var(--white);
+
+        display: block;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+}
+
+/* Paragraph text */
+.showcasep2 {
+    font-size: 20px;
+    font-family: 'Mukta Vaani',monospace;
+    font-weight: normal;
+    color: var(--white);
+
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 20px;
 }

@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
     .landingimage figure {
         position: relative;
@@ -47,16 +48,19 @@
 /* Logo's for footer */
 .logos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
 }
 
     .logos img{
         max-width: 45%;
         height: auto;
-        flex-wrap: nowrap;
-        flex-flow: row;
-        justify-items: center;
-        align-items: center;
+        text-align: center;
+    }
+
+    .logos a{
+        text-align: center;
     }
 
 
