@@ -107,6 +107,7 @@
 
     }
 
+    /* Desktop version */
 @media screen and (min-width: 655px){
     .aboutmeimage{
         background-position: center;
