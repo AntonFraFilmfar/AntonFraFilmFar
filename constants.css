@@ -40,6 +40,16 @@
     color: var(--white);
 }
 
+/* Paragraph text on light background */
+.p2contrast {
+    font-size: 20px;
+    font-family: 'Mukta Vaani',monospace;
+    font-weight: normal;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 2px;
+}
+
 /* Anchor tag */
 a{
     display: inline-block;

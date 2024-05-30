@@ -19,6 +19,13 @@ body {
     background-color: var(--purple);
 }
 
+    .purple a:hover {
+        background-color: var(--pink);
+        color: var(--black);
+        transition:  0.3s ease, padding 0.3s ease;
+        border-radius: 2px;
+    }
+
 .nowrap {
     white-space: nowrap;
 }
@@ -202,8 +209,15 @@ padding:10px;
 }
 
 .showcase img{
+    text-align: center;
     width: 90%;
     
+}
+
+.showcase video{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .showcase figcaption{
@@ -211,11 +225,10 @@ padding:10px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: var(--white);
 }
 
 
-/* Typography, for showcase - with edited margin*/
+/* Typography, for showcase */
 .showcasetitle {
     font-size: 46px;
     font-family: 'Poppins',sans-serif;
@@ -241,7 +254,32 @@ padding:10px;
 }
 
 /* Paragraph text */
+/* Description */
 .showcasep2 {
+    font-size: 20px;
+    font-family: 'Mukta Vaani',monospace;
+    font-weight: normal;
+    color: var(--white);
+
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 20px;
+}
+
+/* Highlighted paragraf text */
+.showcasep2highlight {
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    color: var(--white);
+
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+}
+
+/* Paragraf following highlighted text */
+.showcasep3 {
     font-size: 20px;
     font-family: 'Mukta Vaani',monospace;
     font-weight: normal;
@@ -299,12 +337,17 @@ padding:10px;
         grid-template-areas: 
         'sctitle sctitle'
         'scp1 scimg'
-        'scp2 scimg';
-        grid-template-columns: 1fr 1fr;
-        grid-gap:5px;
+        'scp2 scimg'
+        'scp3 scimg';
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 5px;
         }
 
         .showcase figure{
+            grid-area: scimg;
+        }
+
+        .showcase video{
             grid-area: scimg;
         }
 
@@ -320,4 +363,16 @@ padding:10px;
         .showcasep2 {
             grid-area: scp2;
         }
+            
+        .showcaseparagraf3{
+            grid-area: scp3;
+        }
+
+        /* For images that are too tall and stretch the grids too much */
+        .verticalimg {
+            object-fit: cover;
+            height: auto;
+            width: auto;
+        }
+
 }
