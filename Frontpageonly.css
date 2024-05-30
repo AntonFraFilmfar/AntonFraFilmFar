@@ -58,55 +58,6 @@
     opacity: 0;
 }
 
-
-/* Logo's for footer */
-.logos{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-}
-
-    .logos img{
-        max-width: 45%;
-        height: auto;
-        text-align: center;
-    }
-
-    .logos a{
-        text-align: center;
-    }
-
-
-/* Product highlight section */
-.product{
-    background-color: var(--purple);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-}   
-
-    .product img{
-    max-width: 20%;
-    height: auto;
-    }
-
-    .product figure {
-        position: relative;
-        display: flex;
-    }
-
-    .product figcaption{
-        position: absolute;
-        bottom: 0%; 
-        left: 0%;
-        width: 90%;
-        text-align: center;
-        color: var(--white);
-
-    }
-
     /* Desktop version */
 @media screen and (min-width: 655px){
     .aboutmeimage{
