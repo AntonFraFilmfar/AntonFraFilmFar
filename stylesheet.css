@@ -65,13 +65,13 @@ width: 100%;
 /* class to keep logo when burger menu is active */
 .mainlogo{
     z-index: 2;
+    justify-self: flex-start;
 }
 
 /* Navbar ul */
 #navmenu {
     position: fixed;
     flex-direction: column;
-    justify-content: space-around;
     right: -100%;
     top: 100px;
     width: 100%;
@@ -187,6 +187,8 @@ background: var(--white)
 
     .logos a{
         text-align: center;
+        flex-basis: 100%;
+        padding: 10px;
     }
 
 /* Title på undersider */
@@ -240,7 +242,7 @@ padding:10px;
 
 .showcase figcaption{
     position: absolute;
-    bottom: 0;
+    bottom: 2%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
