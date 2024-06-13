@@ -137,6 +137,7 @@
         'aboutmeimage ammaintext'
         'aboutmeimage amparagraf'
         'aboutmeimage amlist'
+        'aboutmeimage amparagraf2'
         'emptyfooter amlink'; 
         grid-template-columns: 1fr 1fr;
         grid-gap: 5px;
@@ -159,5 +160,6 @@
     .amparagraf {grid-area: amparagraf;}
     .amlist {grid-area: amlist;}
     .amlink{grid-area: amlink;}
+    .amparagraf2 {grid-area:amparagraf2;}
 
 }
