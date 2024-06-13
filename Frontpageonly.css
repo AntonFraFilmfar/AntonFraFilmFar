@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(images/Anton_med_klaptræ.jpg) ;
+    background-image: url(images/Anton_med_klaptræ.webp) ;
     background-position: center;
     width: 100%;
     height: 100vh;
@@ -44,7 +44,9 @@
         15% {opacity: 100%; top: 90%;}
         25% {top: 92%;}
         35% {top: 90%;}
-        65% {top: 90%}
+        45% {top: 90%;}
+        55% {top: 92%}
+        65% {top: 90%;}
         75% {top: 92%;}
         85% {opacity: 100%; top: 90%;}
         100% {opacity: 0%;}
@@ -58,7 +60,7 @@
 }
 
 .aboutmeimage{
-    background-image: url(images/Anton_smiler.png);
+    background-image: url(images/Anton_smiler.webp);
     background-position: top center;
     background-repeat: no-repeat;
         background-size: cover;
@@ -82,7 +84,41 @@
         padding-left: 0;
     }
 
-    /* Desktop version */
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+    .shortcut figure{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    }
+
+    .shortcut a{
+   width: 100%;
+   text-align: center;
+   flex-basis: 100%;
+    }
+
+    .shortcut img{
+    text-align: center;
+    width: 100%;
+    
+    }
+
+    .shortcut figcaption{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+ /* Desktop version */
 @media screen and (min-width: 655px){
     .aboutmeimage{
         background-position: center;
